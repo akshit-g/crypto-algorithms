@@ -43,6 +43,8 @@ public class SHA256 {
             System.out.println("SHA-256 Hash: " + sha256Hash);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
+        } finally {
+            scanner.close(); // Close the Scanner object
         }
     }
 }

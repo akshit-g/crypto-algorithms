@@ -42,5 +42,7 @@ public class RSA {
 
         BigInteger decryptedMessage = rsa.decrypt(encryptedMessage); // Decrypt the encrypted message using RSA
         System.out.println("Decrypted message: " + decryptedMessage);
+
+        scanner.close(); // Close the Scanner object
     }
 }
